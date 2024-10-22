@@ -35,17 +35,15 @@
         var video = document.getElementById("video");
         var hls = new Hls();
         hls.loadSource(
-          "http://584089394598321278.ofkp1020.xyz:80/live/te520649/QaKcU9N5RY/321278.m3u8"
+          "http://897368094961165392.ofgd1018.xyz:80/live/te520649/QaKcU9N5RY/165392.ts"
         );
         hls.attachMedia(video);
         hls.on(Hls.Events.MANIFEST_PARSED, function () {
           video.play();
         });
-
-        alert("as");
       } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
         video.src =
-          "http://584089394598321278.ofkp1020.xyz:80/live/te520649/QaKcU9N5RY/321278.m3u8";
+          "http://897368094961165392.ofgd1018.xyz:80/live/te520649/QaKcU9N5RY/165392.ts";
         video.addEventListener("canplay", function () {
           video.play();
         });
